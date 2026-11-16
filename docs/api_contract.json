@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TerraSpectra Inference Telemetry Contract",
+  "version": "1.0.0",
+  "endpoints": {
+    "POST /api/v1/predict-raster": {
+      "description": "Accepts a 200-band GeoTIFF (.tif) or runs on default benchmark cube and returns GeoJSON spatial stress parcels + spectral diagnostics.",
+      "response_schema": {
+        "scan_id": "string (UUID)",
+        "timestamp_utc": "string (ISO-8601)",
+        "crs": "EPSG:4326",
+        "bounds": {
+          "west": 79.12,
+          "south": 21.1239,
+          "east": 79.1461,
+          "north": 21.15
+        },
+        "center": [79.13305, 21.13695],
+        "summary_metrics": {
+          "total_hectares": "number",
+          "healthy_pct": "number",
+          "early_stress_pct": "number",
+          "high_risk_pct": "number",
+          "mean_ndvi": "number",
+          "mean_ndwi": "number",
+          "model_architecture": "Hybrid-3DCNN-ViT-v1"
+        },
+        "geojson": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": "[[[lon, lat], ...]]"
+              },
+              "properties": {
+                "parcel_id": "string",
+                "crop_class": "string",
+                "risk_tier": "Healthy | Early Stress | High Risk",
+                "stress_probability": "number (0.0 - 1.0)",
+                "ndvi": "number",
+                "ndwi": "number",
+                "red_edge_ci": "number",
+                "elevation_meters": "number",
+                "spectral_curve_200": "number[]"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
