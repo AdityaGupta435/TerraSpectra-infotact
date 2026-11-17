@@ -1,0 +1,8 @@
+{
+  "model": "HybridSN (3D-2D CNN)",
+  "dataset": "Indian Pines (15x15x30 patches)",
+  "test_overall_accuracy": 99.87,
+  "cohen_kappa": 0.9985,
+  "num_classes": 16,
+  "test_samples": 1538
+}
