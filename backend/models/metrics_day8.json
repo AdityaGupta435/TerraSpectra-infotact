@@ -1,0 +1,8 @@
+{
+  "model": "Spectral3DViTFusion (Augmented + CosineAnnealingLR)",
+  "epochs": 60,
+  "training_time_sec": 214.1,
+  "best_val_acc": 100.0,
+  "test_overall_accuracy": 99.8,
+  "cohen_kappa": 0.9978
+}
