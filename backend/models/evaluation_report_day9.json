@@ -1,0 +1,119 @@
+{
+  "model": "Spectral3DViTFusion (Day 8 Tuned)",
+  "overall_accuracy_pct": 99.8,
+  "average_accuracy_pct": 99.65,
+  "cohen_kappa": 0.9978,
+  "macro_f1_pct": 99.38,
+  "weighted_f1_pct": 99.81,
+  "per_class_metrics": {
+    "Alfalfa": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 7.0
+    },
+    "Corn-notill": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 214.0
+    },
+    "Corn-mintill": {
+      "precision": 0.9920634920634921,
+      "recall": 1.0,
+      "f1-score": 0.9960159362549801,
+      "support": 125.0
+    },
+    "Corn": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 35.0
+    },
+    "Grass-pasture": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 73.0
+    },
+    "Grass-trees": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 110.0
+    },
+    "Grass-pasture-mowed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "Hay-windrowed": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 71.0
+    },
+    "Oats": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "Soybean-notill": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 146.0
+    },
+    "Soybean-mintill": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 369.0
+    },
+    "Soybean-clean": {
+      "precision": 1.0,
+      "recall": 0.9775280898876404,
+      "f1-score": 0.9886363636363636,
+      "support": 89.0
+    },
+    "Wheat": {
+      "precision": 1.0,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.9830508474576272,
+      "support": 30.0
+    },
+    "Woods": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 190.0
+    },
+    "Buildings-Grass-Trees": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 58.0
+    },
+    "Stone-Steel-Towers": {
+      "precision": 0.875,
+      "recall": 1.0,
+      "f1-score": 0.9333333333333333,
+      "support": 14.0
+    },
+    "accuracy": 0.9980494148244473,
+    "macro avg": {
+      "precision": 0.9916914682539683,
+      "recall": 0.9965121722846442,
+      "f1-score": 0.993814780042644,
+      "support": 1538.0
+    },
+    "weighted avg": {
+      "precision": 0.9982171238673189,
+      "recall": 0.9980494148244473,
+      "f1-score": 0.9980811576631368,
+      "support": 1538.0
+    }
+  }
+}
