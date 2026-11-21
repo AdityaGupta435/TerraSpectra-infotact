@@ -1,0 +1,92 @@
+{
+  "audit_day": "Day 10 - Mid-Project 3D Tensor & Memory Audit",
+  "model": "Spectral3DViTFusion",
+  "parameters": 379248,
+  "checkpoint_size_mb": 1.47,
+  "device": "cuda",
+  "baseline_rss_mb": 1504.45,
+  "post_audit_rss_mb": 1523.06,
+  "zero_memory_overflow": true,
+  "batch_benchmarks": [
+    {
+      "batch_size": 1,
+      "tensor_shape": [
+        1,
+        1,
+        30,
+        15,
+        15
+      ],
+      "input_tensor_mb": 0.026,
+      "inference_latency_ms": 15.26,
+      "throughput_patches_per_sec": 65.5,
+      "python_peak_alloc_kb": 7.08,
+      "rss_memory_mb": 1522.71,
+      "numerical_integrity": "PASS (0 NaN/Inf)"
+    },
+    {
+      "batch_size": 16,
+      "tensor_shape": [
+        16,
+        1,
+        30,
+        15,
+        15
+      ],
+      "input_tensor_mb": 0.412,
+      "inference_latency_ms": 12.57,
+      "throughput_patches_per_sec": 1272.9,
+      "python_peak_alloc_kb": 5.36,
+      "rss_memory_mb": 1522.85,
+      "numerical_integrity": "PASS (0 NaN/Inf)"
+    },
+    {
+      "batch_size": 64,
+      "tensor_shape": [
+        64,
+        1,
+        30,
+        15,
+        15
+      ],
+      "input_tensor_mb": 1.648,
+      "inference_latency_ms": 4.36,
+      "throughput_patches_per_sec": 14678.9,
+      "python_peak_alloc_kb": 5.87,
+      "rss_memory_mb": 1522.85,
+      "numerical_integrity": "PASS (0 NaN/Inf)"
+    },
+    {
+      "batch_size": 128,
+      "tensor_shape": [
+        128,
+        1,
+        30,
+        15,
+        15
+      ],
+      "input_tensor_mb": 3.296,
+      "inference_latency_ms": 4.95,
+      "throughput_patches_per_sec": 25858.6,
+      "python_peak_alloc_kb": 5.87,
+      "rss_memory_mb": 1522.96,
+      "numerical_integrity": "PASS (0 NaN/Inf)"
+    },
+    {
+      "batch_size": 256,
+      "tensor_shape": [
+        256,
+        1,
+        30,
+        15,
+        15
+      ],
+      "input_tensor_mb": 6.592,
+      "inference_latency_ms": 18.15,
+      "throughput_patches_per_sec": 14104.7,
+      "python_peak_alloc_kb": 5.48,
+      "rss_memory_mb": 1523.06,
+      "numerical_integrity": "PASS (0 NaN/Inf)"
+    }
+  ]
+}
