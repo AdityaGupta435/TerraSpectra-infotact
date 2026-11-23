@@ -3,21 +3,21 @@ import React from "react";
 export default function HealthLegend({ summaryMetrics }) {
   const tiers = [
     {
-      title: "Healthy Crops",
-      subtitle: "Strong growth & greenery",
+      title: "Healthy",
+      subtitle: "Optimal chlorophyll & canopy vigor",
       color: "#16a34a",
       pct: summaryMetrics.healthy_pct,
     },
     {
-      title: "Early Stress Warning",
-      subtitle: "Monitor water & nutrients",
-      color: "#f59e0b",
+      title: "Early Stress",
+      subtitle: "Early water / nutrient deficiency",
+      color: "#eab308",
       pct: summaryMetrics.early_stress_pct,
     },
     {
-      title: "High Disease Risk",
-      subtitle: "Immediate inspection needed",
-      color: "#ef4444",
+      title: "High Blight Risk",
+      subtitle: "Critical spectral anomaly detected",
+      color: "#dc2626",
       pct: summaryMetrics.high_risk_pct,
     },
   ];

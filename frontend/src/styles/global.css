@@ -9,7 +9,7 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 68% 55%, #f4fafe 0%, #d8ecfa 55%, #c3e1f6 100%);
+  background: radial-gradient(circle at 68% 55%, #f8fafc 0%, #e0f2fe 55%, #bae6fd 100%);
   color: #0f172a;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,4 +20,44 @@ body,
   position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+.map-layer-switcher {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(186, 218, 242, 0.95);
+  box-shadow: 0 8px 24px rgba(15, 65, 115, 0.1);
+  border-radius: 999px;
+  padding: 6px;
+}
+
+.layer-pill-btn {
+  border: none;
+  background: transparent;
+  color: #334155;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.layer-pill-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.layer-pill-btn.active {
+  background: #0b5ed7;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(11, 94, 215, 0.25);
 }

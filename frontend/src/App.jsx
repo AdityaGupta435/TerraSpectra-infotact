@@ -9,7 +9,7 @@ export default function App() {
   const [viewState, setViewState] = useState(FARM_VIEWPORT_CONFIG.initialViewState);
   const [telemetry] = useState(INITIAL_FARM_TELEMETRY);
   const [selectedParcel, setSelectedParcel] = useState(
-    INITIAL_FARM_TELEMETRY.geojson.features[0].properties
+    INITIAL_FARM_TELEMETRY.parcels[0]
   );
 
   return (
@@ -27,7 +27,9 @@ export default function App() {
       <FarmMapViewport
         viewState={viewState}
         onViewStateChange={setViewState}
-        geojsonData={telemetry.geojson}
+        parcels={telemetry.parcels}
+        gridPoints={telemetry.gridPoints}
+        selectedParcelId={selectedParcel?.parcel_id}
         onSelectParcel={setSelectedParcel}
       />
     </div>
