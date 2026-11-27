@@ -1,0 +1,29 @@
+{
+  "audit_day": "Day 14 - GIS Coordinate Alignment Audit",
+  "scan_id": "TS-TILE-SAMPLE_FARM_CUBE_200B",
+  "crs": "EPSG:4326",
+  "axis_order": "[longitude, latitude] (GeoJSON RFC 7946 / Deck.gl)",
+  "total_features_audited": 36,
+  "valid_closed_polygons": 36,
+  "expected_farm_bounds": {
+    "west": 79.12,
+    "south": 21.1239,
+    "east": 79.1461,
+    "north": 21.15
+  },
+  "actual_geojson_bounds": {
+    "west": 79.12,
+    "south": 21.1239,
+    "east": 79.1461,
+    "north": 21.15
+  },
+  "boundary_deltas_deg": {
+    "west": 0.0,
+    "south": 0.0,
+    "east": 0.0,
+    "north": 0.0
+  },
+  "max_delta_deg": 0.0,
+  "tolerance_deg": 0.0001,
+  "alignment_status": "PASS (100% Aligned)"
+}
