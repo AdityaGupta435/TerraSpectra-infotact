@@ -175,3 +175,271 @@
   color: #0f172a;
   margin-top: 2px;
 }
+
+
+
+/* Day 15: Analytics Sidebar Tabs & Charts (Light Theme) */
+.sidebar-tab-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 10px 14px 0;
+  background: #ffffff;
+}
+
+.sidebar-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #475569;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.sidebar-tab-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.sidebar-tab-btn.active {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #0b5ed7;
+}
+
+.analytics-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.risk-kpi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.risk-kpi-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.risk-kpi-card.highlight-risk {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.risk-kpi-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.risk-kpi-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.risk-kpi-value {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.risk-kpi-sub {
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+.breakdown-card,
+.anomaly-chart-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.breakdown-header,
+.anomaly-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.breakdown-header {
+  justify-content: flex-start;
+}
+
+.section-heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.crop-risk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.crop-risk-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.76rem;
+  margin-bottom: 4px;
+}
+
+.crop-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.crop-ha {
+  font-weight: 500;
+  color: #64748b;
+}
+
+.crop-prob {
+  font-weight: 700;
+}
+
+.stacked-progress {
+  height: 7px;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  background: #e2e8f0;
+}
+
+.seg-healthy {
+  background: #16a34a;
+}
+
+.seg-stress {
+  background: #eab308;
+}
+
+.seg-blight {
+  background: #dc2626;
+}
+
+.chart-mini-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.7rem;
+  color: #475569;
+}
+
+.mini-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mini-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.anomaly-bars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.anomaly-band-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.anomaly-band-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.74rem;
+}
+
+.band-name {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.band-range {
+  color: #64748b;
+  font-size: 0.7rem;
+}
+
+.deviation-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.deviation-pill.dev-up {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.deviation-pill.dev-down {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.dual-bar-track {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bar-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bar-fill {
+  height: 6px;
+  border-radius: 999px;
+}
+
+.healthy-bar {
+  background: #16a34a;
+}
+
+.blight-bar {
+  background: #dc2626;
+}
+
+.bar-num {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.band-component {
+  font-size: 0.68rem;
+  color: #64748b;
+}
